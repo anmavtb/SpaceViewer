@@ -1,23 +1,31 @@
 using System;
-using System.Collections.Generic;
-using System.Net.Mime;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 
-public abstract class Module : MonoBehaviour
+public class Module : MonoBehaviour
 {
+    [Serializable]
+    public enum EContentType
+    {
+        OTHER,
+        TEXT,
+        IMAGE,
+        VIDEO
+    }
+
     public event Action<TemplateSO> OnContentUptate = null;
 
     [SerializeField] protected TemplateSO currentContentToDisplay = null;
-    [SerializeField] protected ContentType typeToDisplay = null;
+    [SerializeField] protected EContentType typeToDispay = EContentType.OTHER;
     [SerializeField] protected Canvas UIToDisplay = null;
 
-    [SerializeField] List<TemplateSO> allContents;
+    [SerializeField] ModuleManager moduleManager = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,27 +34,26 @@ public abstract class Module : MonoBehaviour
 
     }
 
-    public abstract void Execute();
-
-    protected abstract void InstanciateUI();
-
     public void ManageScan(ARTrackedImage _image)
     {
-        string _imageName = _image.referenceImage.name;
-        foreach (var _content in allContents)
+        foreach (TemplateSO content in moduleManager.DataBase.AllContent)
         {
-            if (_content.Image.name != _imageName) continue;
-            currentContentToDisplay = _content;
-            typeToDisplay = _content.Content;
-            Debug.Log($"LOG1 {currentContentToDisplay}");
-            Debug.Log($"LOG2 {_content.Content}");
-            Debug.Log($"LOG3 {typeToDisplay}");
-            //Execute();
-            return;
+            if (_image.referenceImage.name != content.Image.name) continue;
+            Debug.Log("OUI");
         }
     }
 
-    TemplateSO GetRelatedContent(ARTrackedImage _image)
+    public virtual void Execute(EContentType _contentType)
+    {
+        foreach (Module module in moduleManager.AllModules)
+        {
+            module.Execute(_contentType);
+        }
+    }
+
+    protected virtual void InstanciateUI() { }
+
+    public TemplateSO GetRelatedContent(ARTrackedImage _image)
     {
         return currentContentToDisplay;
     }

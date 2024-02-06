@@ -1,11 +1,20 @@
-using System.Net.Mime;
+using System;
 using UnityEngine;
 
 public class TemplateSO : ScriptableObject
 {
+    [Serializable]
+    public enum EContentType
+    {
+        OTHER,
+        TEXT,
+        IMAGE,
+        VIDEO
+    }
+
     [SerializeField] protected Texture2D image = null;
-    [SerializeField] protected ContentType content = null;
+    [SerializeField] protected EContentType content = EContentType.OTHER;
 
     public Texture2D Image => image;
-    public ContentType Content => content;
+    public EContentType Content => content;
 }

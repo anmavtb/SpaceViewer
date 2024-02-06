@@ -14,8 +14,9 @@ public class ModuleImage : Module
         
     }
 
-    public override void Execute()
+    public override void Execute(EContentType _contentType)
     {
+        if (_contentType != typeToDispay) return;
         Debug.Log("LOG : CECI EST UNE IMAGE");
     }
 

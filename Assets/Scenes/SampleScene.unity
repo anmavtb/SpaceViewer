@@ -321,6 +321,10 @@ GameObject:
   m_Component:
   - component: {fileID: 101473650}
   - component: {fileID: 101473652}
+  - component: {fileID: 101473653}
+  - component: {fileID: 101473654}
+  - component: {fileID: 101473656}
+  - component: {fileID: 101473655}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -357,6 +361,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageManager: {fileID: 331264288}
   imageLibrary: {fileID: 11400000, guid: 4096a139955feac4da7b6d5e8a221daa, type: 2}
+  moduleManager: {fileID: 0}
+--- !u!114 &101473653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101473648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b083578e9e7869241aa0fc4819caf0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentContentToDisplay: {fileID: 0}
+  UIToDisplay: {fileID: 0}
+  allContents:
+  - {fileID: 11400000, guid: 58da7aa0da9b52a4d9d6662ff5336cc3, type: 2}
+  - {fileID: 11400000, guid: 17ef221159020824d9b7acd4030d2184, type: 2}
+  allModules:
+  - {fileID: 101473654}
+  - {fileID: 101473656}
+  - {fileID: 101473655}
+--- !u!114 &101473654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101473648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc7b8180ed8fce418e95e20977b65cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentContentToDisplay: {fileID: 0}
+  UIToDisplay: {fileID: 0}
+  allContents: []
+  allModules: []
+--- !u!114 &101473655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101473648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d44ed8d157c1246b6295ca419aa114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentContentToDisplay: {fileID: 0}
+  UIToDisplay: {fileID: 0}
+  allContents: []
+  allModules: []
+--- !u!114 &101473656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101473648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37df29249c614514a87614c99db4bdf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentContentToDisplay: {fileID: 0}
+  UIToDisplay: {fileID: 0}
+  allContents: []
+  allModules: []
 --- !u!1 &145380978
 GameObject:
   m_ObjectHideFlags: 0

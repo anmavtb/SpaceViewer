@@ -14,8 +14,9 @@ public class ModuleText : Module
 
     }
 
-    public override void Execute()
+    public override void Execute(EContentType _contentType)
     {
+        if (_contentType != typeToDispay) return;
         Debug.Log("LOG : CECI EST UN TEXTE");
     }
 
