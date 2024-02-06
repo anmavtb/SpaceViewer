@@ -20,4 +20,6 @@ public class ContentText : TemplateSO
 {
     [SerializeField] string textToDisplay = "";
     List<localizedText> allTexts = new();
+
+    public String TextToDisplay => textToDisplay;
 }

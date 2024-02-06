@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Planet2
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: da5e408d43fe75f4293501414a07c3a8, type: 3}
+  content: 1
   textToDisplay: YOLOOOOO

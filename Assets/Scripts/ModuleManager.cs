@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class ModuleManager : MonoBehaviour
 {
-    [SerializeField] Module baseModule = null;
     [SerializeField] List<Module> allModules = new();
     [SerializeField] DataBase dataBase = null;
-
-    public Module BaseModule => baseModule;
     public DataBase DataBase => dataBase;
     public List<Module> AllModules => allModules;
 
@@ -23,8 +21,11 @@ public class ModuleManager : MonoBehaviour
         
     }
 
-    public void Execute()
+    public void Execute(ARTrackedImage _image)
     {
-
+        foreach (Module module in allModules)
+        {
+            module.ManageScan(_image);
+        }
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class ModuleImage : Module
 {
@@ -14,14 +15,24 @@ public class ModuleImage : Module
         
     }
 
-    public override void Execute(EContentType _contentType)
+    public override void Execute(TemplateSO _content)
     {
-        if (_contentType != typeToDispay) return;
-        Debug.Log("LOG : CECI EST UNE IMAGE");
+        ContentImage _image = _content as ContentImage;
+        Debug.Log(_image.ImageToDisplay);
     }
 
     protected override void InstanciateUI()
     {
 
+    }
+
+    public override void ManageScan(ARTrackedImage _image)
+    {
+        foreach (TemplateSO content in dataBase.AllContent)
+        {
+            if (_image.referenceImage.name != content.Image.name) continue;
+            if (content.Content != typeToDispay) continue;
+            Execute(content);
+        }
     }
 }

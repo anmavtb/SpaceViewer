@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Planet
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 033849b36d666eb48985be9ae6d8fad7, type: 3}
+  content: 1
   textToDisplay: JE SUIS UNE NOUVELLE PLANETE

@@ -28,7 +28,7 @@ public class ImageScanner : MonoBehaviour
     {
         foreach (var newImage in _eventArgs.added)
         {
-            moduleManager.BaseModule.ManageScan(newImage);
+            moduleManager.Execute(newImage);
         }
 
         foreach (var updatedImage in _eventArgs.updated)
