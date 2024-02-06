@@ -1,19 +1,12 @@
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
 
 public class ModuleImage : Module
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Update() { }
 
     public override void Execute(TemplateSO _content)
     {
@@ -26,13 +19,9 @@ public class ModuleImage : Module
 
     }
 
-    public override void ManageScan(ARTrackedImage _image)
+    public override void ManageScan(TemplateSO _content)
     {
-        foreach (TemplateSO content in dataBase.AllContent)
-        {
-            if (_image.referenceImage.name != content.Image.name) continue;
-            if (content.Content != typeToDispay) continue;
-            Execute(content);
-        }
+        if (_content.Content != typeToDispay) return;
+        Execute(_content);
     }
 }

@@ -15,10 +15,7 @@ public class ImageScanner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    void Update() { }
 
     private void OnEnable() => imageManager.trackedImagesChanged += OnChange;
 
@@ -32,9 +29,7 @@ public class ImageScanner : MonoBehaviour
         }
 
         foreach (var updatedImage in _eventArgs.updated)
-        {
-
-        }
+        { }
 
         foreach (var removedImage in _eventArgs.removed)
         {

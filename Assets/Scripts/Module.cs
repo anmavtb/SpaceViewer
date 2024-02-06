@@ -14,18 +14,12 @@ public class Module : MonoBehaviour
     [SerializeField] protected DataBase dataBase = null;
 
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    void Start() { }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() { }
 
-    }
-
-    public virtual void ManageScan(ARTrackedImage _image) { }
+    public virtual void ManageScan(TemplateSO _content) { }
 
     public virtual void Execute(TemplateSO _content) { }
 
