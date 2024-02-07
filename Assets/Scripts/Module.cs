@@ -10,15 +10,6 @@ public class Module : MonoBehaviour
     [SerializeField] protected TemplateSO.EContentType typeToDispay = TemplateSO.EContentType.OTHER;
     [SerializeField] protected Canvas UIToDisplay = null;
 
-    [SerializeField] ModuleManager moduleManager = null;
-    [SerializeField] protected DataBase dataBase = null;
-
-    // Start is called before the first frame update
-    void Start() { }
-
-    // Update is called once per frame
-    void Update() { }
-
     public virtual void ManageScan(TemplateSO _content) { }
 
     public virtual void Execute(TemplateSO _content) { }

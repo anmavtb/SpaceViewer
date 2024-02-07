@@ -6,16 +6,6 @@ public class ImageScanner : MonoBehaviour
 {
     [SerializeField] ARTrackedImageManager imageManager = null;
     [SerializeField] XRReferenceImageLibrary imageLibrary = null;
-    [SerializeField] ModuleManager moduleManager = null;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        moduleManager = GetComponent<ModuleManager>();
-    }
-
-    // Update is called once per frame
-    void Update() { }
 
     private void OnEnable() => imageManager.trackedImagesChanged += OnChange;
 
@@ -25,7 +15,7 @@ public class ImageScanner : MonoBehaviour
     {
         foreach (var newImage in _eventArgs.added)
         {
-            moduleManager.Execute(newImage);
+            ModuleManager.Instance.Execute(newImage);
         }
 
         foreach (var updatedImage in _eventArgs.updated)
