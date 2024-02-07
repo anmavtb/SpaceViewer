@@ -7,7 +7,7 @@ public class Module : MonoBehaviour
     public event Action<TemplateSO> OnContentUptate = null;
 
     [SerializeField] protected TemplateSO currentContentToDisplay = null;
-    [SerializeField] protected TemplateSO.EContentType typeToDispay = TemplateSO.EContentType.OTHER;
+    [SerializeField] protected TemplateSO.EContentType typeToDisplay = TemplateSO.EContentType.OTHER;
     [SerializeField] protected Canvas UIToDisplay = null;
 
     public virtual void ManageScan(TemplateSO _content) { }
@@ -15,9 +15,4 @@ public class Module : MonoBehaviour
     public virtual void Execute(TemplateSO _content) { }
 
     protected virtual void InstanciateUI() { }
-
-    public TemplateSO GetRelatedContent(ARTrackedImage _image)
-    {
-        return currentContentToDisplay;
-    }
 }

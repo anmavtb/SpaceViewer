@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00b91a5b15abed3489b781b6293a33bd, type: 3}
-  m_Name: Planet
+  m_Name: Jupiter
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 033849b36d666eb48985be9ae6d8fad7, type: 3}
-  content: 1
-  textToDisplay: JE SUIS UNE NOUVELLE PLANETE
+  contentType: 1
+  textToDisplay: "Je suis grosse et j'aime \xE7a"
+  allTexts: []

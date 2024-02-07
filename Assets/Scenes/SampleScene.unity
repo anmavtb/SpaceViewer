@@ -325,8 +325,8 @@ GameObject:
   - component: {fileID: 101473658}
   - component: {fileID: 101473657}
   - component: {fileID: 101473656}
-  - component: {fileID: 101473655}
   - component: {fileID: 101473654}
+  - component: {fileID: 101473655}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -363,7 +363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageManager: {fileID: 331264288}
   imageLibrary: {fileID: 11400000, guid: 4096a139955feac4da7b6d5e8a221daa, type: 2}
-  moduleManager: {fileID: 0}
 --- !u!114 &101473653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,8 +376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allContent:
-  - {fileID: 11400000, guid: 58da7aa0da9b52a4d9d6662ff5336cc3, type: 2}
-  - {fileID: 11400000, guid: 17ef221159020824d9b7acd4030d2184, type: 2}
+  - {fileID: 11400000, guid: c53f12df7ddf3dc4a988829f9da6c5f2, type: 2}
+  - {fileID: 11400000, guid: 8ae345a6882677f4da474b1311ac927f, type: 2}
 --- !u!114 &101473654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,10 +391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentContentToDisplay: {fileID: 0}
-  typeToDispay: 3
+  typeToDisplay: 2
   UIToDisplay: {fileID: 0}
-  moduleManager: {fileID: 101473658}
-  dataBase: {fileID: 101473653}
 --- !u!114 &101473655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,10 +406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentContentToDisplay: {fileID: 0}
-  typeToDispay: 2
+  typeToDisplay: 3
   UIToDisplay: {fileID: 0}
-  moduleManager: {fileID: 101473658}
-  dataBase: {fileID: 101473653}
 --- !u!114 &101473656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,10 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentContentToDisplay: {fileID: 0}
-  typeToDispay: 1
+  typeToDisplay: 1
   UIToDisplay: {fileID: 0}
-  moduleManager: {fileID: 101473658}
-  dataBase: {fileID: 101473653}
 --- !u!114 &101473657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,9 +436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentContentToDisplay: {fileID: 0}
-  typeToDispay: 0
+  typeToDisplay: 0
   UIToDisplay: {fileID: 0}
-  moduleManager: {fileID: 101473658}
 --- !u!114 &101473658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +454,6 @@ MonoBehaviour:
   - {fileID: 101473656}
   - {fileID: 101473655}
   - {fileID: 101473654}
-  dataBase: {fileID: 101473653}
 --- !u!1 &145380978
 GameObject:
   m_ObjectHideFlags: 0

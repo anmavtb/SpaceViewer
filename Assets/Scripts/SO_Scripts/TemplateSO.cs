@@ -13,8 +13,8 @@ public class TemplateSO : ScriptableObject
     }
 
     [SerializeField] protected Texture2D image = null;
-    [SerializeField] protected EContentType content = EContentType.OTHER;
+    [SerializeField] protected EContentType contentType = EContentType.OTHER;
 
     public Texture2D Image => image;
-    public EContentType Content => content;
+    public EContentType ContentType => contentType;
 }
