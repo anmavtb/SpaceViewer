@@ -10,7 +10,7 @@ public class Module : MonoBehaviour
     [SerializeField] protected TemplateSO.EContentType typeToDisplay = TemplateSO.EContentType.OTHER;
     [SerializeField] protected Canvas UIToDisplay = null;
 
-    public virtual void ManageScan(TemplateSO _content) { }
+    public TemplateSO.EContentType TypeToDisplay => typeToDisplay;
 
     public virtual void Execute(TemplateSO _content) { }
 

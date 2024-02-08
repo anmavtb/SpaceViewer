@@ -3,15 +3,9 @@ using UnityEngine;
 public class ModuleImage : Module
 {
     /// <summary>
-    /// Check if the content is an image
+    /// Cast the content in the right format before doing what it needs to do
     /// </summary>
     /// <param name="_content"></param>
-    public override void ManageScan(TemplateSO _content)
-    {
-        if (_content.ContentType != typeToDisplay) return;
-        Execute(_content);
-    }
-
     public override void Execute(TemplateSO _content)
     {
         ContentImage _image = _content as ContentImage;

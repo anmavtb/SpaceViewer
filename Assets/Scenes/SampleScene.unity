@@ -139,8 +139,9 @@ GameObject:
   - component: {fileID: 101473656}
   - component: {fileID: 101473654}
   - component: {fileID: 101473655}
+  - component: {fileID: 101473659}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: LOGIC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,10 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee5c670e9fc81c4892e0f5668d47147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allContent:
-  - {fileID: 11400000, guid: c53f12df7ddf3dc4a988829f9da6c5f2, type: 2}
-  - {fileID: 11400000, guid: 8ae345a6882677f4da474b1311ac927f, type: 2}
-  SOList: []
+  allContent: []
 --- !u!114 &101473654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,10 +261,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e30c0b19ff210b498b6b90f467d251c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allModules:
-  - {fileID: 101473656}
-  - {fileID: 101473655}
-  - {fileID: 101473654}
+  allModules: []
+--- !u!114 &101473659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101473648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce70bbeffffb774da270f55033d116a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canUseDebug: 1
 --- !u!1001 &331264285
 PrefabInstance:
   m_ObjectHideFlags: 0

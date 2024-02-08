@@ -23,7 +23,6 @@ public class ImageScanner : MonoBehaviour
 
         foreach (var removedImage in _eventArgs.removed)
         {
-            Debug.Log($"LOG REMOVED");
         }
     }
 }
