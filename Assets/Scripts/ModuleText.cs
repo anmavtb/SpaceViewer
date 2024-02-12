@@ -28,10 +28,7 @@ public class ModuleText : Module
         DebugManager.Instance.DebugString("Draw UI");
         UIText _textUI = UIToDisplay.GetComponent<UIText>();
         if (!_textUI) return;
-        _textUI.gameObject.SetActive(true);
-        float _newScale = 2f / Screen.height;
-        _textUI.transform.localScale = new Vector3(_newScale, _newScale, _newScale);
-        _textUI.transform.position = new Vector3(0, 0, -1f); //+ _textUI.transform.up;
+        SetupUI(_textUI);
         textCompo = _textUI.GetComponentInChildren<ScrollRect>().GetComponentInChildren<TextMeshProUGUI>();
         TranslateText(actualLanguage);
     }

@@ -1,10 +1,6 @@
 using UnityEngine;
 
-public class UIImage : MonoBehaviour
+public class UIImage : UIParent
 {
-    // Update is called once per frame
-    void Update()
-    {
-        //transform.LookAt(Camera.main.transform);
-    }
+    protected override void Init() { }
 }

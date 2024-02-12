@@ -22,10 +22,8 @@ public class ModuleVideo : Module
         DebugManager.Instance.DebugString("Draw UI");
         UIVideo _videoUI = UIToDisplay.GetComponent<UIVideo>();
         if (!_videoUI) return;
-        _videoUI.gameObject.SetActive(true);
-        float _newScale = 2f / Screen.height;
-        _videoUI.transform.localScale = new Vector3(_newScale, _newScale, _newScale);
-        _videoUI.transform.position = new Vector3(0, 0, -1f); //+ _textUI.transform.up;
+        SetupUI(_videoUI);
         VideoPlayer _videoCompo = _videoUI.GetComponentInChildren<VideoPlayer>();
+        _videoCompo.clip = _contentVideo.VideoToDisplay;
     }
 }

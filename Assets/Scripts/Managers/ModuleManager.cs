@@ -7,11 +7,11 @@ public class ModuleManager : Singleton<ModuleManager>
 {
     [SerializeField] List<Module> allModules = new();
     [SerializeField] ARRaycastManager raycastManager;
-    [SerializeField] Vector3 objectPosition = Vector3.zero;
+    [SerializeField] Transform objectPosition = null;
     List<ARRaycastHit> hitResults = new();
 
     public List<Module> AllModules => allModules;
-    public Vector3 ObjectPosition => objectPosition;
+    public Transform ObjectPosition => objectPosition;
 
     private void Start()
     {
@@ -44,8 +44,8 @@ public class ModuleManager : Singleton<ModuleManager>
             }
             if (module.TypeToDisplay != _content.ContentType) continue;
             DebugManager.Instance.DebugString($"The module for this image is : {module.TypeToDisplay}");
-            objectPosition = _image.transform.position;
-            DebugManager.Instance.DebugString($"Image position : {objectPosition}");
+            objectPosition = _image.transform;
+            DebugManager.Instance.DebugString($"Image position : {objectPosition.position}");
             module.Execute(_content);
         }
     }

@@ -22,10 +22,7 @@ public class ModuleImage : Module
         DebugManager.Instance.DebugString("Draw UI");
         UIImage _imageUI = UIToDisplay.GetComponent<UIImage>();
         if (!_imageUI) return;
-        _imageUI.gameObject.SetActive(true);
-        float _newScale = 2f / Screen.height;
-        _imageUI.transform.localScale = new Vector3(_newScale, _newScale, _newScale);
-        _imageUI.transform.position = new Vector3(0, 0, -1f); //+ _textUI.transform.up;
+        SetupUI(_imageUI);
         Image _imageCompo = _imageUI.GetComponentInChildren<Image>();
         _imageCompo.sprite = _contentImage.ImageToDisplay;
     }
