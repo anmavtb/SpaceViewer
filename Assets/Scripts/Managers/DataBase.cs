@@ -46,8 +46,6 @@ public class DataBase : Singleton<DataBase>
         }
         foreach (TemplateSO content in allContent)
         {
-            Debug.Log("C");
-            DebugManager.Instance.DebugString($"{_image.name} // {_image.referenceImage.name} // {_image.referenceImage}");
             if (_image.referenceImage.name != content.Image.name) continue;
             DebugManager.Instance.DebugString($"This image contains : {content.Image.name}");
             return content;

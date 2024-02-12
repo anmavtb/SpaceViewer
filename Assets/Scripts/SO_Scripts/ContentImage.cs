@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ContentImage", menuName = "New Content/Image")]
 public class ContentImage : TemplateSO
 {
-    [SerializeField] Texture2D imageToDisplay = null;
+    [SerializeField] Sprite imageToDisplay = null;
 
-    public Texture2D ImageToDisplay => imageToDisplay;
+    public Sprite ImageToDisplay => imageToDisplay;
 }

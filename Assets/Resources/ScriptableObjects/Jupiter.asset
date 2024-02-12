@@ -7,12 +7,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00b91a5b15abed3489b781b6293a33bd, type: 3}
   m_Name: Jupiter
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: cd4011e4816f71d4493464c5c56001d8, type: 3}
   contentType: 1
-  textToDisplay: "Je suis grosse et j'aime \xE7a"
-  allTexts: []
+  allTexts:
+    items:
+    - language: 1
+      text: I am fat and i like it
+    - language: 2
+      text: "Je suis grosse et j'aime \xE7a"

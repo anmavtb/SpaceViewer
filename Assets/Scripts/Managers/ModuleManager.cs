@@ -1,19 +1,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class ModuleManager : Singleton<ModuleManager>
 {
     [SerializeField] List<Module> allModules = new();
+    [SerializeField] ARRaycastManager raycastManager;
+    [SerializeField] Vector3 objectPosition = Vector3.zero;
+    List<ARRaycastHit> hitResults = new();
+
     public List<Module> AllModules => allModules;
+    public Vector3 ObjectPosition => objectPosition;
 
     private void Start()
     {
-        GetComponents<Module>(allModules);
+        GetComponents(allModules);
+    }
+
+    private void Update()
+    {
+        //TEST();
     }
 
     /// <summary>
-    /// Send the image to each module
+    /// Send the image to the right module
     /// </summary>
     /// <param name="_image"></param>
     public void Execute(ARTrackedImage _image)
@@ -32,8 +43,25 @@ public class ModuleManager : Singleton<ModuleManager>
                 continue;
             }
             if (module.TypeToDisplay != _content.ContentType) continue;
-            DebugManager.Instance.DebugString($"The module for this image is : {module.name}");
+            DebugManager.Instance.DebugString($"The module for this image is : {module.TypeToDisplay}");
+            objectPosition = _image.transform.position;
+            DebugManager.Instance.DebugString($"Image position : {objectPosition}");
             module.Execute(_content);
         }
     }
+
+    /*void TEST()
+    {
+        Ray _ray = Camera.main.ScreenPointToRay(Camera.main.transform.position);
+        DebugManager.Instance.DebugString(_ray.ToString());
+        Vector2 _screenPoint = new Vector2(_ray.direction.x, _ray.direction.y);
+        bool _hit = raycastManager.Raycast(_ray, hitResults, TrackableType.AllTypes); //(Vector2 screenPoint, List < ARRaycastHit > hitResults, TrackableType trackableTypes TrackableType.Depth)
+        if (!_hit)
+        {
+            DebugManager.Instance.DebugString("_none_");
+            return;
+        }
+        DebugManager.Instance.DebugWarning("!!! FOUND !!!");
+        DebugManager.Instance.DebugString(hitResults[0].ToString());
+    }*/
 }

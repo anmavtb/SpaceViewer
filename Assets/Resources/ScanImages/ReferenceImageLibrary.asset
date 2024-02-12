@@ -38,8 +38,8 @@ MonoBehaviour:
     m_Name: earth
     m_Texture: {fileID: 2800000, guid: f0dfa558f6d86444588d85e3554b0807, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5697512561575119144
-      m_GuidHigh: 12496650252376101022
+      m_GuidLow: 4834987979701421913
+      m_GuidHigh: 6612883489143513486
     m_SerializedTextureGuid:
       m_GuidLow: 13093282451607640409
       m_GuidHigh: 8370274758795709467
@@ -48,18 +48,8 @@ MonoBehaviour:
     m_Name: mars
     m_Texture: {fileID: 2800000, guid: bfedd959af04b5b41bcc6fa68b302974, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5702423867194079518
-      m_GuidHigh: 13639156278651376802
-    m_SerializedTextureGuid:
-      m_GuidLow: 5797371771567961745
-      m_GuidHigh: 9117397608763466810
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: mercury
-    m_Texture: {fileID: 2800000, guid: 132f769166e950743aa457b2d180877e, type: 3}
-  - m_SerializedGuid:
-      m_GuidLow: 5692523389220935445
-      m_GuidHigh: 11528266474060733853
+      m_GuidLow: 5518061449404828979
+      m_GuidHigh: 14047669569607518600
     m_SerializedTextureGuid:
       m_GuidLow: 406563526048687909
       m_GuidHigh: 14554431157080712952
@@ -68,8 +58,8 @@ MonoBehaviour:
     m_Name: moon
     m_Texture: {fileID: 2800000, guid: 74c32725675f05a4f866ac5106bafbc9, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5742129070977267766
-      m_GuidHigh: 6030398608580076950
+      m_GuidLow: 5216772065251787426
+      m_GuidHigh: 2527810640513706388
     m_SerializedTextureGuid:
       m_GuidLow: 11498906588429897936
       m_GuidHigh: 3801211832909870234
@@ -78,8 +68,8 @@ MonoBehaviour:
     m_Name: neptune
     m_Texture: {fileID: 2800000, guid: 4cc350d0529e9f949ab49ab8059ec034, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 4839156409924301814
-      m_GuidHigh: 5797402812148807312
+      m_GuidLow: 5037123379244167979
+      m_GuidHigh: 10546761043300874379
     m_SerializedTextureGuid:
       m_GuidLow: 8418549200312605131
       m_GuidHigh: 4504070219507034571
@@ -88,8 +78,8 @@ MonoBehaviour:
     m_Name: pluto
     m_Texture: {fileID: 2800000, guid: f0c819cbb1e474d4cbe9214500ac813e, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 4741733742069578594
-      m_GuidHigh: 11222051344446644614
+      m_GuidLow: 5289117621957808508
+      m_GuidHigh: 186933547598264728
     m_SerializedTextureGuid:
       m_GuidLow: 14385760813021467569
       m_GuidHigh: 9731780606724772072
@@ -98,8 +88,8 @@ MonoBehaviour:
     m_Name: saturn
     m_Texture: {fileID: 2800000, guid: 8be113b17d3dc7a4e890dd8fe63a0e87, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5010111393969553977
-      m_GuidHigh: 4341616575547384766
+      m_GuidLow: 5192411755344345705
+      m_GuidHigh: 6178756392712652692
     m_SerializedTextureGuid:
       m_GuidLow: 4946159766368920180
       m_GuidHigh: 4951496724114317017
@@ -108,8 +98,8 @@ MonoBehaviour:
     m_Name: uranus
     m_Texture: {fileID: 2800000, guid: 04bfa2744a1a44a4d91e58530940b744, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5588537951665734909
-      m_GuidHigh: 13869722176739549368
+      m_GuidLow: 4716797399963457026
+      m_GuidHigh: 1996869218583341209
     m_SerializedTextureGuid:
       m_GuidLow: 13773345966970828034
       m_GuidHigh: 4564183077773231498

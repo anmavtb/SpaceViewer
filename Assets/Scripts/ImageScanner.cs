@@ -13,15 +13,15 @@ public class ImageScanner : MonoBehaviour
 
     void OnChange(ARTrackedImagesChangedEventArgs _eventArgs)
     {
-        foreach (var newImage in _eventArgs.added)
+        foreach (var _newImage in _eventArgs.added)
         {
-            ModuleManager.Instance.Execute(newImage);
+            ModuleManager.Instance.Execute(_newImage);
         }
 
-        foreach (var updatedImage in _eventArgs.updated)
+        foreach (var _updatedImage in _eventArgs.updated)
         { }
 
-        foreach (var removedImage in _eventArgs.removed)
+        foreach (var _removedImage in _eventArgs.removed)
         {
         }
     }

@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: f0dfa558f6d86444588d85e3554b0807, type: 3}
   contentType: 1
-  textToDisplay: Je suis la Terre toute plate
-  allTexts: []
+  allTexts:
+    items:
+    - language: 1
+      text: I am the Earth all flat
+    - language: 2
+      text: Je suis la Terre toute plate
