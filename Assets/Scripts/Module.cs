@@ -19,10 +19,15 @@ public class Module : MonoBehaviour
 
     public void SetupUI(UIParent _ui)
     {
-        _ui.gameObject.SetActive(true);
+        SwapActivation(_ui.gameObject);
         _ui.transform.parent = imagePosition;
         float _newScale = 2f / Screen.height;
         _ui.transform.localPosition = new Vector3(0, 0, .5f);
         _ui.transform.localScale = new Vector3(_newScale, _newScale, _newScale);
+    }
+
+    public void SwapActivation(GameObject _go)
+    {
+        _go.SetActive(!_go.activeSelf);
     }
 }

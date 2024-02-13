@@ -19,9 +19,7 @@ public class ModuleManager : Singleton<ModuleManager>
     }
 
     private void Update()
-    {
-        //TEST();
-    }
+    { }
 
     /// <summary>
     /// Send the image to the right module
@@ -45,23 +43,7 @@ public class ModuleManager : Singleton<ModuleManager>
             if (module.TypeToDisplay != _content.ContentType) continue;
             DebugManager.Instance.DebugString($"The module for this image is : {module.TypeToDisplay}");
             objectPosition = _image.transform;
-            DebugManager.Instance.DebugString($"Image position : {objectPosition.position}");
             module.Execute(_content);
         }
     }
-
-    /*void TEST()
-    {
-        Ray _ray = Camera.main.ScreenPointToRay(Camera.main.transform.position);
-        DebugManager.Instance.DebugString(_ray.ToString());
-        Vector2 _screenPoint = new Vector2(_ray.direction.x, _ray.direction.y);
-        bool _hit = raycastManager.Raycast(_ray, hitResults, TrackableType.AllTypes); //(Vector2 screenPoint, List < ARRaycastHit > hitResults, TrackableType trackableTypes TrackableType.Depth)
-        if (!_hit)
-        {
-            DebugManager.Instance.DebugString("_none_");
-            return;
-        }
-        DebugManager.Instance.DebugWarning("!!! FOUND !!!");
-        DebugManager.Instance.DebugString(hitResults[0].ToString());
-    }*/
 }

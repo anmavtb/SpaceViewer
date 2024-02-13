@@ -22,7 +22,6 @@ public class ImageScanner : MonoBehaviour
         { }
 
         foreach (var _removedImage in _eventArgs.removed)
-        {
-        }
+        { }
     }
 }

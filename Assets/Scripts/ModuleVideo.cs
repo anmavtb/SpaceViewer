@@ -19,7 +19,6 @@ public class ModuleVideo : Module
     /// </summary>
     protected void InstanciateUI(ContentVideo _contentVideo)
     {
-        DebugManager.Instance.DebugString("Draw UI");
         UIVideo _videoUI = UIToDisplay.GetComponent<UIVideo>();
         if (!_videoUI) return;
         SetupUI(_videoUI);
