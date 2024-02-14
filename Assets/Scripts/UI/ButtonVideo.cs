@@ -4,8 +4,8 @@ using UnityEngine.Video;
 
 public abstract class ButtonVideo : MonoBehaviour
 {
-    [SerializeField] protected VideoPlayer player = null;
-    [SerializeField] protected Button button = null;
+    [ReadOnly] protected VideoPlayer player = null;
+    [ReadOnly] protected Button button = null;
 
     // Start is called before the first frame update
     void Start()

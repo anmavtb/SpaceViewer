@@ -1,11 +1,9 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 public class ImageScanner : MonoBehaviour
 {
     [SerializeField] ARTrackedImageManager imageManager = null;
-    [SerializeField] XRReferenceImageLibrary imageLibrary = null;
 
     private void OnEnable() => imageManager.trackedImagesChanged += OnChange;
 

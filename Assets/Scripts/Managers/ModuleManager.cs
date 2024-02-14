@@ -1,14 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 public class ModuleManager : Singleton<ModuleManager>
 {
-    [SerializeField] List<Module> allModules = new();
+    [ReadOnly] List<Module> allModules = new();
     [SerializeField] ARRaycastManager raycastManager;
-    [SerializeField] Transform objectPosition = null;
-    List<ARRaycastHit> hitResults = new();
+    Transform objectPosition = null;
 
     public List<Module> AllModules => allModules;
     public Transform ObjectPosition => objectPosition;

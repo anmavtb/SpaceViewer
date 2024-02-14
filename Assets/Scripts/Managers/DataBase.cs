@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 public class DataBase : Singleton<DataBase>
 {
-    [SerializeField] List<TemplateSO> allContent = new();
+    [ReadOnly] List<TemplateSO> allContent = new();
 
     public List<TemplateSO> AllContent => allContent;
 

@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.Video;
 
 public class ModuleVideo : Module
@@ -17,6 +16,7 @@ public class ModuleVideo : Module
     /// <summary>
     /// Display the UI of the video module
     /// </summary>
+    /// <param name="_contentVideo"></param>
     protected void InstanciateUI(ContentVideo _contentVideo)
     {
         UIVideo _videoUI = UIToDisplay.GetComponent<UIVideo>();

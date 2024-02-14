@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.UI;
 
 public class ModuleImage : Module
@@ -17,6 +16,7 @@ public class ModuleImage : Module
     /// <summary>
     /// Display the UI of the image module
     /// </summary>
+    /// <param name="_contentImage"></param>
     protected void InstanciateUI(ContentImage _contentImage)
     {
         DebugManager.Instance.DebugString("Draw UI");
