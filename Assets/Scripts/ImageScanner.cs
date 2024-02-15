@@ -5,11 +5,11 @@ public class ImageScanner : MonoBehaviour
 {
     [SerializeField] ARTrackedImageManager imageManager = null;
 
-    private void OnEnable() => imageManager.trackedImagesChanged += OnChange;
+    private void OnEnable() => imageManager.trackedImagesChanged += OnChanged;
 
-    private void OnDisable() => imageManager.trackedImagesChanged -= OnChange;
+    private void OnDisable() => imageManager.trackedImagesChanged -= OnChanged;
 
-    void OnChange(ARTrackedImagesChangedEventArgs _eventArgs)
+    void OnChanged(ARTrackedImagesChangedEventArgs _eventArgs)
     {
         foreach (var _newImage in _eventArgs.added)
         {
@@ -17,9 +17,17 @@ public class ImageScanner : MonoBehaviour
         }
 
         foreach (var _updatedImage in _eventArgs.updated)
-        { }
-
-        foreach (var _removedImage in _eventArgs.removed)
-        { }
+        {
+            if (_updatedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
+            {
+                Debug.Log($"LOG : TRACK {_updatedImage.referenceImage.name}");
+                _updatedImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning($"LOG : UN-TRACK {_updatedImage.referenceImage.name}");
+                _updatedImage.gameObject.SetActive(false);
+            }
+        }
     }
 }

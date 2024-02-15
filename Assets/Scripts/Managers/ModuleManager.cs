@@ -4,7 +4,7 @@ using UnityEngine.XR.ARFoundation;
 
 public class ModuleManager : Singleton<ModuleManager>
 {
-    [ReadOnly] List<Module> allModules = new();
+    [SerializeField, ReadOnly] List<Module> allModules = new();
     [SerializeField] ARRaycastManager raycastManager;
     Transform objectPosition = null;
 
