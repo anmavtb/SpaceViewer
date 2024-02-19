@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f261a6df0690df46a4f71e69833ec90, type: 3}
-  m_Name: Earth
+  m_Script: {fileID: 11500000, guid: a76351232a1b8af4587fc95dfcf03f36, type: 3}
+  m_Name: Sun
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: f0dfa558f6d86444588d85e3554b0807, type: 3}
-  contentType: 3
-  videoToDisplay: {fileID: 32900000, guid: fe89f1edad9448447ab24c7ec5da7a76, type: 3}
+  image: {fileID: 2800000, guid: 166942d5f12f3dc45893766e5b11d507, type: 3}
+  contentType: 2
+  imageToDisplay: {fileID: 21300000, guid: 01c8d2e0167fa4d4d9b577394ec88f9c, type: 3}

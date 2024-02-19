@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b91a5b15abed3489b781b6293a33bd, type: 3}
+  m_Name: Saturn
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  contentType: 1
+  allTexts:
+    items:
+    - language: 1
+      text: Saturn is the sixth planet in the Solar System. It is a gas giant mainly
+        known for its ring system. Among its 82 moons, we find Titan, the second
+        largest moon in the Solar System and the only one to have an atmosphere.
+    - language: 2
+      text: "Saturne est la sixi\xE8me plan\xE8te du Syst\xE8me solaire. C'est une
+        g\xE9ante gazeuse principalement connue pour son syst\xE8me d'anneaux. Parmis
+        ses 82 lunes, on trouve Titan, la deuxi\xE8me plus grande lune  du Syst\xE8me
+        solaire ainsi que la seule \xE0 poss\xE9der une atmosph\xE8re."

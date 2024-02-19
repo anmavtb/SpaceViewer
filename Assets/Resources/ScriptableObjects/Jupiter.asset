@@ -17,18 +17,9 @@ MonoBehaviour:
   allTexts:
     items:
     - language: 1
-      text: I am fat and i like it. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.
+      text: Jupiter is the fifth planet in the Solar System and also the largest.
+        It is a gas giant with an average radius of nearly 70,000 km.
     - language: 2
-      text: "Je suis grosse et j'aime \xE7a. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+      text: "Jupiter est la cinqui\xE8me plan\xE8te du Syst\xE8me solaire et \xE9galement
+        la plus grande. C'est une g\xE9ante gazeuse d'un rayon moyen de pr\xE8s de
+        70,000km."

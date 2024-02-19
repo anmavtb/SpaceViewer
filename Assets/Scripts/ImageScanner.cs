@@ -20,12 +20,10 @@ public class ImageScanner : MonoBehaviour
         {
             if (_updatedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
             {
-                Debug.Log($"LOG : TRACK {_updatedImage.referenceImage.name}");
                 _updatedImage.gameObject.SetActive(true);
             }
             else
             {
-                Debug.LogWarning($"LOG : UN-TRACK {_updatedImage.referenceImage.name}");
                 _updatedImage.gameObject.SetActive(false);
             }
         }

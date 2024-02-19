@@ -24,6 +24,7 @@ public class TranslatedTexts
     public Dictionary<ELanguage, string> ToDictionnary()
     {
         Dictionary<ELanguage, string> _newDict = new();
+        if (items == null) return _newDict;
         foreach (var item in items)
         {
             _newDict.Add(item.language, item.text);

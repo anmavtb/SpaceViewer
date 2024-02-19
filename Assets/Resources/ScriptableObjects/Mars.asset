@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b91a5b15abed3489b781b6293a33bd, type: 3}
+  m_Name: Mars
+  m_EditorClassIdentifier: 
+  image: {fileID: 2800000, guid: bfedd959af04b5b41bcc6fa68b302974, type: 3}
+  contentType: 1
+  allTexts:
+    items:
+    - language: 1
+      text: Also called the Red Planet, Mars and the fourth planet in the Solar System.
+        It is a terrestrial planet with an average radius of approximately 3,400
+        km.
+    - language: 2
+      text: "Aussi appel\xE9e la Plan\xE8te rouge, Mars et la quatri\xE8me plan\xE8te
+        du Syst\xE8me solaire. C'est une plan\xE8te tellurique avec un rayon moyen
+        d'environ 3,400 km."

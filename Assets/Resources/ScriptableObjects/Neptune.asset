@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b91a5b15abed3489b781b6293a33bd, type: 3}
+  m_Name: Neptune
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  contentType: 1
+  allTexts:
+    items:
+    - language: 1
+      text: Neptune is the eighth planet in the Solar System. Not being visible to
+        the naked eye, It is the first celestial object and the only one of the eight
+        planets of the Solar System to have been discovered by deduction rather than
+        by empirical observation.
+    - language: 2
+      text: "Neptune est la huiti\xE8me plan\xE8te du Sys\xE8me solaire. N'\xE9tant
+        pas visible \xE0 l'\u0153il nu, Elle est le premier objet c\xE9leste et la
+        seule des huit plan\xE8tes du Syst\xE8me solaire \xE0 avoir \xE9t\xE9 d\xE9couverte
+        par d\xE9duction plut\xF4t que par observation empirique."
